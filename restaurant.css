@@ -1,0 +1,1100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* ഇത് ബോർഡറും പാഡിംഗും കാരണം വീതി കൂടുന്നത് തടയും */
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* സ്ക്രീൻ സൈസ് മാറി സൈഡിലേക്ക് പേജ് വലിഞ്ഞു പോകുന്നത് തടയാൻ */
+  scroll-behavior: smooth;/* scroll cheyyunnath/navigation lu click cheyyumbol slowly ethan*/
+}
+
+/* LOGO NAV CONTAINER*/
+.logo-nav-container {
+  min-height: 35vh;
+  background: #0d0d0d; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* distance btween logo and */
+  margin-bottom: 20px;
+}
+
+/* ചിത്രങ്ങളുടെ വലിപ്പം ക്രമീകരിക്കാൻ */
+.logo img:first-child {
+    height: 120px; /* PL ലോഗോ വലിപ്പം (ആവശ്യാനുസരണം മാറ്റാം) */
+    width: auto;
+}
+
+.logo img:last-child {
+    height: 100px; /* PEARL LUXE പേരിന്റെ വലിപ്പം */
+    width: auto;
+}
+
+/*NAVIGATION MENU*/
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* ലിങ്കുകൾ തമ്മിലുള്ള അകലം */
+    padding: 0;
+    margin: 0;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #ffffff; /* ലിങ്ക് നിറം */
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;      /*link nte underline remove cheyyan*/
+}
+
+nav a:hover{
+    color: #d4af37;
+}
+
+.hero{
+    background: linear-gradient(rgba(75, 73, 73, 0.75), rgba(13, 13, 13, 0.75)),url("r.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;                  /* contents verticaly center*/
+    flex-direction: column;         
+    justify-content: center;        /*vertical center*/
+    align-items: center;            /*horizontal center*/
+    text-align: center;
+    
+    height: 85vh; 
+}   
+
+.hero h1,h2{
+    color: #ffffff;
+    text-align: center;
+}
+
+.hero h1{
+    font-size: 4rem;
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10pt;
+}
+
+.hero h2{
+    font-size: 2rem;
+    margin-bottom: 10pt;
+    margin-bottom: 50px;
+}
+
+.hero p {
+    color: #d9cbcb;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.4rem;   
+}
+
+.btn-container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+     gap: 20px;               /* രണ്ട് ബട്ടണുകൾ തമ്മിലുള്ള അകലം */
+    width: 60%;
+}
+.cta-button{
+    margin-bottom: 20pt;
+    border-radius: 5pt;
+    padding: 12px 30px;
+    border: none;
+    background-color: #0d0d0d;
+    color: #f7f3e3;
+    box-shadow: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cta-button:hover{
+    color: #0d0d0d;
+    background: whitesmoke;
+}
+
+/*ABOUT*/
+.about-special_dish{
+    background-color: #252525;
+    padding: 60px 20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.about{
+  display: flex;
+  max-width: 1200px; /* വെബ്‌പേജിന്റെ പരമാവധി വീതി */
+  width: 100%;
+  gap: 50px; /* രണ്ട് സെക്ഷനുകൾ തമ്മിലുള്ള അകലം */
+  align-items: flex-start;
+}
+
+.about-left{
+  color: #ffffff;
+  flex: 6;
+  text-align: left; /* എഴുത്തുകൾ ഇടത് വശത്ത് നിന്ന് തുടങ്ങാൻ */
+}
+
+.about-left h3{
+  font-size: 32px;
+  color: #d4af37; /* ഗോൾഡൻ നിറം */
+  margin-bottom: 20px;
+}
+
+.about-left ul{
+   display: block;      
+   gap: 30px;
+   list-style: none;    /* bullet style(dot) remove cheyyunnu*/
+}
+
+.about-left p{
+  font-size: 20px;
+  line-height: 1.6;
+  color: #e0e0e0;
+  margin-bottom: 20px;
+}
+
+/*qoute style*/
+.quote p{
+  font-size: 20px;
+  font-family: fantasy;
+  font-style: italic;
+  color: #f5e6a8;
+  margin-top: 25px;
+  font-size: 18px;
+}
+
+.special-dish{
+  flex: 4;
+  background-color: #161616; /* ചെറുതായി തെളിഞ്ഞു നിൽക്കുന്ന ബ്ലാക്ക് ബോക്സ് */
+  padding: 30px;
+  border-radius: 8px;
+  border-left: 3px solid #d4af37; /* ഇടത് വശത്ത് ഗോൾഡൻ ബോർഡർ */
+  color: #ffffff;
+}
+
+.special-dish h3{
+  font-size: 24px;
+  color: #d4af37;
+  margin-bottom: 20px;
+}
+
+.about-left li, .special-dish li{
+  font-size: 18px;
+  margin-bottom: 5px;
+  position: relative;
+  padding-left: 20px;
+  list-style: none;
+}
+
+/* ലിസ്റ്റുകൾക്ക് മുന്നിൽ ചെറിയ ഗോൾഡൻ ഡോട്ട് കൊടുക്കാൻ */
+.about-left li::before, .special-dish li::before {
+  content: "•";
+  color: #d4af37;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/*MENU*/
+/* MENU MAIN CONTAINER */
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background-color: #000;
+}
+
+.menu h3 {
+  font-size: 32px;
+  color: #d4af37; /* ഗോൾഡൻ നിറം */
+  margin-bottom: 18px;
+  padding-top: 20px;
+}
+
+/* GRID LAYOUT - വരിയിൽ കൃത്യം 4 എണ്ണം വരാൻ */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 5 ന് പകരം കൃത്യം 4 കാർഡുകൾ മാത്രം ഒരു വരിയിൽ */
+  gap: 25px 20px; /* നിരകൾ തമ്മിലുള്ള ലംബമായ അകലം 25px ആയി കുറച്ചു */
+  width: 100%;
+}
+
+/* WRAPPER STRUCTURE */
+.menuCard-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* PREMIUM CARD STYLE WITH GLASSMORPHISM */
+.menu-card {
+  height: 200px;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  transition: all 0.4s ease;
+  border: 1px solid rgba(220, 179, 66, 0.15); /* Soft gold border */
+  cursor: pointer;
+}
+
+/* Dark elegant shade over image */
+.menu-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+   left: 0; 
+   width: 100%; 
+   height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  transition: background 0.4s ease;
+  z-index: 1;
+}
+
+/* Premium Text Style inside Glass Box */
+.menu-card h4 {
+  background: rgba(12, 12, 12, 0.45); /* Glassmorphic background */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 12px 24px;
+  border-radius: 12px;
+  width: 80%;
+  text-align: center;
+  margin: 0;
+  z-index: 2;
+  
+  /* Your Text Styling */
+  color: #faf5e6; /* Gold color */
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.4s ease;
+}
+
+/* Hover Effect */
+.menu-card:hover {
+  transform: translateY(-8px);
+  border-color: #dcb342;
+  box-shadow: 0 15px 35px rgba(220, 179, 66, 0.2);
+}
+
+.menu-card:hover::before {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.menu-card:hover h4 {
+  background: rgba(220, 179, 66, 0.15);
+  border-color: rgba(220, 179, 66, 0.4);
+  color: #ffffff;
+}
+
+/* MENU LIST INITIAL STATE (വലിയ ഗ്യാപ്പ് വരുന്നത് പൂർണ്ണമായി ഒഴിവാക്കാൻ) */
+.menu-list {
+  display: none;
+  position: absolute; /* അടഞ്ഞിരിക്കുമ്പോൾ ഗ്രിഡിനുള്ളിൽ സ്ഥലം പിടിക്കാതിരിക്കാൻ */
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 15px;
+  border-left: 4px solid #dcb342; /* solid ഇവിടെ ചേർത്തു */
+  margin-bottom: 15px;
+}
+
+/* Class to show list when clicked */
+.menu-list.show {
+  display: block;
+  position: relative; /* തുറക്കുമ്പോൾ മാത്രം ബാക്കി കാർഡുകളെ താഴേക്ക് തള്ളി മാറ്റാൻ */
+  margin-top: 5px;
+}
+
+.menu-list h4 {
+  list-style: none;
+  color: #dcb342;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.menu-list ul {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.menu-list li {
+  font-size: 14px;
+  color: #cccccc;
+  padding: 4px 0;
+}
+
+/* GALLARY */
+.gallery-section {
+    background-color: #0d0d0d;
+    background-size: auto;
+    background-repeat: repeat;
+    
+    width: 100%;
+}
+
+.gallery-section h3 {
+    color: #d4af37; /* ലക്ഷ്വറി ഗോൾഡ് */
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+/* ഫോട്ടോകളും വീഡിയോകളും ഒരേ സൈസിൽ വരാൻ */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* കോമൺ ഐറ്റം സ്റ്റൈൽ (ഫോട്ടോയ്ക്കും വീഡിയോയ്ക്കും) */
+.gallaryImage-card, .video-card{
+    width: 100%; 
+    overflow: hidden; /* ഉള്ളടക്കം ബോക്സിന് പുറത്തേക്ക് പോകാതിരിക്കാൻ */
+    border: 1px solid rgba(197, 168, 128, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease, border-color 0.4s ease;
+    object-fit: cover; /* ബോക്സിന് അനുസരിച്ച് ഫിറ്റ് ആകാൻ */
+}
+
+/* മൗസ് വെക്കുമ്പോൾ ചെറുതായി പൊങ്ങി വരാൻ */
+.gallery-item:hover {
+    transform: translateY(-5px);
+    border-color: rgba(197, 168, 128, 1);
+}
+
+/*REVIEW*/
+.review-reservation-container {
+  background-image: url('doodles.jpg');
+  background-size: contain;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* രണ്ട് ബോക്സുകൾക്കിടയിൽ കൃത്യമായ അകലം നൽകാൻ */
+  align-items: stretch;       /* രണ്ട് ബോക്സുകളും മുകളിൽ ഒരേ ലെവലിൽ തുടങ്ങാൻ */
+  padding: 40px 20px;            /* ചുറ്റും അല്പം സ്പേസ് നൽകാൻ (ആവശ്യമെങ്കിൽ മാറ്റാം) */
+  box-sizing: border-box;
+  gap: 80px !important;  /* ബോക്സുകൾ തമ്മിലുള്ള അകലം */
+
+  /* ഇതാണ് രണ്ട് ബോക്സുകളെ ഒരേ ലൈനിൽ നിർത്തുന്നത് */
+  display: flex !important;
+  flex-direction: row !important; /* എപ്പോഴും സൈഡ്-ബൈ-സൈഡ് ആയിരിക്കാൻ */
+  flex-wrap: nowrap !important;   /* ഒരു കാരണവശാലും താഴേക്ക് പോകാൻ അനുവദിക്കില്ല */
+  
+}
+
+.review-box h3 {
+  color: #d4af37;
+  font-size: 2.5rem;
+}
+
+.review-box {
+  flex: 1; /* flex box anusarich width edukkan*/
+  max-width: 550px;
+  min-height: 510px;
+  background: #111;
+  
+  color: #fff;
+  padding: 30px;
+  border: 1px solid #c5a880;
+  font-family: sans-serif;
+}
+
+.review-box h3 {
+   color: #c5a880; margin: 0 0 15px 0; 
+}
+
+.stars { 
+  margin-bottom: 15px; cursor: pointer; 
+}
+
+.star { 
+  font-size: 44px; 
+  color: #444; 
+  transition: color 0.2s; 
+}
+
+.star.active { 
+  color: #c5a880; 
+}
+
+#reviewForm input, textarea {
+  width: 100%; 
+  padding: 15px;
+  gap: 10px;
+  margin-right: 30px;
+  margin-bottom: 15px;
+  background: #222; 
+  border: 1px solid #444; 
+  color: #fff; 
+  box-sizing: border-box;
+}
+
+button {
+  background: #c5a880; 
+  color: #111; 
+  border: none;
+  padding: 10px 20px; 
+  font-weight: bold; 
+  cursor: pointer; 
+  width: 100%;
+}
+
+#msg { 
+  color: #c5a880; 
+  font-size: 14px; 
+  margin-top: 10px; 
+  text-align: center; 
+}
+
+/* BOOKING TABLE */
+.booking-table {
+  flex: 1;
+  /*  നേരിയ സുതാര്യമായ ബാക്ക്ഗ്രൗണ്ട് */
+  background: rgba(255, 255, 255, 0.06); 
+  /*  പിന്നിലെ ഡൂഡിലുകൾ ബ്ലർ ചെയ്യാനുള്ള മാജിക് വരി */
+  backdrop-filter: blur(12px);          
+  -webkit-backdrop-filter: blur(12px); /* Safari ബ്രൗസറുകൾക്ക് വേണ്ടി */
+  /*  ചില്ലിന്റെ വശങ്ങൾ പോലെ തോന്നിക്കുന്ന നേർത്ത ബോർഡർ */
+  border: 1px solid rgba(255, 255, 255, 0.15); 
+  /*  ബോക്സിന് 3D ലുക്ക് നൽകുന്ന പ്രീമിയം ഷാഡോ */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3); 
+  padding: 30px;
+  border-radius: 12px; 
+  max-width: 550px;
+  min-height: 400px;
+}
+
+.booking-table h3 {
+  color: #ffffff;
+  text-align: center;
+}
+
+label{
+  font-size: 14pt;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+ color: #ffffff
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    margin: 8px 0 15px 0;
+    border-color: #e0ebf5;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid #626060; 
+    color: #fff; 
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.required{
+    color: rgb(253, 153, 125);
+}
+
+.booking-table button {
+  background: #d4af37;
+  width: 100%;
+  padding: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  font-size: large;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+/*  CONTACT */
+/* Contact Section Main Layout */
+.contact {
+    background-color: #0c0c0c; /* ഡാർക്ക് പ്രീമിയം പശ്ചാത്തലം */
+    color: #ffffff;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /* മാപ്പും വിവരങ്ങളും തമ്മിലുള്ള അകലം */
+    border-bottom: 1px solid #1a1a1a;
+}
+
+/* Map Styling */
+.map {
+    position: relative;
+    width: 250px; /* മാപ്പിന്റെ വീതി കൂട്ടി */
+    height: 180px; /* മാപ്പിന്റെ ഉയരം കൂട്ടി */
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #d4af37; /* ഗോൾഡൻ ബോർഡർ */
+}
+
+.map iframe {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Google Maps Overlay Effect */
+.map-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+.map:hover .map-overlay {
+    background: rgba(0, 0, 0, 0.1); /* ഹോവർ ചെയ്യുമ്പോൾ മാപ്പ് വ്യക്തമാകും */
+}
+
+.map-overlay span {
+    background: rgba(12, 12, 12, 0.85);
+    color: #d4af37;
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 4px;
+    border: 1px solid #d4af37;
+    font-family: sans-serif;
+}
+
+/* Contact Info Styling */
+.contact-info {
+    max-width: 450px;
+    text-align: left;
+}
+
+.contact-info h3 {
+    color: #d4af37; /* പ്രീമിയം ഗോൾഡ് ഹെഡിങ് */
+    font-family: 'Playfair Display', serif, sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* Info Items (Address, Phone, Email) */
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 15px;
+}
+
+.icon-box {
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.info-text p {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #cccccc;
+    line-height: 1.5;
+}
+
+.info-text strong {
+    color: #d4af37; /* ലേബലുകൾക്ക് ഗോൾഡ് നിറം */
+    margin-right: 5px;
+}
+
+/* Links (Phone & Email) */
+.info-text a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.info-text a:hover {
+    color: #d4af37; /* ലിങ്കുകളിൽ തൊടുമ്പോൾ ഗോൾഡ് നിറമാകും */
+    text-decoration: underline;
+}
+
+/* Footer Main Styling */
+.footer {
+    background-color: #0c0c0c; /* ഡാർക്ക് ബ്ലാക്ക് പശ്ചാത്തലം */
+    padding: 30px 20px;
+    text-align: center;
+    border-top: 1px solid #d4af37; /* പ്രീമിയം ഗോൾഡൻ ലൈൻ */
+}
+
+/* Social Media Section */
+.social-media-icons {
+    margin-bottom: 15px;
+}
+.social-media-icons a {
+    margin: 0 12px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+.social-media-icons a:hover {
+    transform: scale(1.15); /* ഹോവർ ചെയ്യുമ്പോൾ ചെറുതായി വലുതാകും */
+}
+
+/* Privacy Policy Modal */
+.policy-modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.85); /* പശ്ചാത്തലം ഇരുണ്ടതാക്കാൻ */
+}
+.modal-content {
+    background-color: #141414;
+    border: 1px solid #d4af37; /* ഗോൾഡ് ബോർഡർ */
+    color: #e5e5e5;
+    margin: 15% auto;
+    padding: 25px;
+    width: 80%; max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.2); /* ലൈറ്റ് ഗോൾഡൻ ഗ്ലോ */
+}
+.gold-line {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #d4af37, transparent);
+    margin: 15px 0;
+}
+.close-btn {
+    float: right;
+    color: #d4af37;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Privacy Policy Link Premium Styling */
+.policy-link-container {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.privacy-link {
+    color: #c5a880; /* Elegant Soft Gold */
+    font-family: 'Playfair Display', serif, sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+}
+
+.privacy-link:hover {
+    color: #ffffff; /* ഹോവർ ചെയ്യുമ്പോൾ വെള്ള നിറമാകും */
+    border-bottom: 1px solid #d4af37; /* താഴെ ഗോൾഡൻ വര വരും */
+}
+
+/* Modal Open state */
+.policy-modal.show-modal {
+    display: block !important;
+}
+
+/* Copyright Text */
+.copy-right p {
+    color: #d4af37; /* ഗോൾഡൻ നിറം */
+    font-family: 'Playfair Display', serif, sans-serif; /* റോയൽ ലുക്ക് ഫോണ്ട് */
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+
+/* ===================================================
+   1. ടാബ്‌ലെറ്റുകൾക്കുള്ള സ്റ്റൈൽ (769px മുതൽ 1024px വരെ)
+   =================================================== */
+@media screen and (min-width: 769px) and (max-width: 1025px) {
+  
+   .logo-nav-container {
+        min-height: auto; /* ഉയരം തനിയെ ക്രമീകരിക്കാൻ */
+        padding: 15px;
+    }
+
+    .logo img:first-child {
+        height: 90px; /* PL ലോഗോ വലിപ്പം അല്പം കുറച്ചു */
+    }
+
+    .logo img:last-child {
+        height: 75px; /* PEARL LUXE പേരിന്റെ വലിപ്പം കുറച്ചു */
+    }
+
+    .nav-bar ul {
+        gap: 20px; /* ലിങ്കുകൾ തമ്മിലുള്ള അകലം കുറച്ചു */
+    }
+
+    .hero {
+      
+      min-height: auto; /* കണ്ടന്റുകൾക്ക് അനുസരിച്ച് ഉയരം മാറാൻ */
+      padding: 60px 20px; /* മുകളിലും താഴെയും വശങ്ങളിലും ഗ്യാപ്പ് */
+      margin-top: 0; /* ടാബ്‌ലെറ്റിൽ ഗ്യാപ്പ് ഒഴിവാക്കി */
+    }
+
+    .hero h1 {
+        font-size: 2.8rem; /* എഴുത്തിന്റെ വലിപ്പം അല്പം കുറച്ചു */
+    }
+
+    .hero h2 {
+        font-size: 1.6rem;
+        margin-bottom: 30px;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .btn-container {
+        width: 80%; /* ബട്ടൺ കണ്ടെയ്നർ വീതി കൂട്ടി */
+    }
+
+  .about, .special-dish {
+    width: 48%; /* ടാബ്‌ലെറ്റിന് അനുയോജ്യമായ വീതി */
+  }
+
+  /* MENU */
+  .menu-grid {
+    grid-template-columns: repeat(2, f1r); /* ടാബുകളിൽ ഒരു വരിയിൽ 2 എണ്ണം */
+  }
+  .menu-card {
+    height: 180px; /* കാർഡിന്റെ ഉയരം പാകത്തിന് കുറച്ചു */
+    }
+
+  .menu-card h4 {
+    font-size: 16px;
+    letter-spacing: 2px;
+    width: 85%;
+  }
+
+/* GALLARY */
+   .gallery-section {
+        padding: 40px 20px; /* വശങ്ങളിൽ കൃത്യമായ അകലം നൽകാൻ */
+        min-height: auto;
+    }
+
+    .gallery-section h3 {
+        font-size: 2rem; /* തലക്കെട്ടിന്റെ വലിപ്പം അല്പം കുറച്ചു */
+        margin-bottom: 35px;
+    }
+
+    /* ടാബ്‌ലെറ്റിൽ ഒരു വരിയിൽ 2 കാർഡുകൾ വീതം വരാൻ */
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+/*review*/
+  .review-reservation-container {
+    height: auto !important;         
+    min-height: 100vh !important;
+    display: flex !important;
+    flex-direction: row !important; /* എപ്പോഴും ഒരേ നിരയിൽ നിർത്താൻ */
+    justify-content: center !important; 
+    align-items: center !important;  
+    padding: 20px !important;        /* സ്പേസ് കുറച്ചു */
+    gap: 20px !important;            
+  }
+
+  .review-box, .booking-table {
+    flex: 1 !important;
+    max-width: 46% !important;       
+    padding: 15px 20px !important;   /* ഉള്ളിലെ പാഡിംഗ് കുറച്ചു */
+    box-sizing: border-box !important;
+  }
+
+  /* ഉയരം കുറഞ്ഞ സ്ക്രീനുകളിൽ (Nest Hub പോലെ) ഘടകങ്ങൾ കൂടുതൽ ഒതുങ്ങി നിൽക്കാൻ */
+  .review-box h3, .booking-table h3 {
+    font-size: 1.8rem !important;    
+    margin-bottom: 10px !important;
+  }
+
+  .star {
+    font-size: 28px !important;      
+  }
+
+  #reviewForm input, textarea, .booking-table input {
+    padding: 8px !important;         
+    margin-bottom: 8px !important;
+    box-sizing: border-box !important;
+  }
+
+  button, .booking-table button {
+    padding: 8px !important;
+    margin-top: 5px !important;
+    font-size: 11pt !important;
+  }
+
+
+
+
+
+
+
+
+}
+
+/* ===================================================
+   മൊബൈൽ ഫോണുകൾക്കുള്ള സ്റ്റൈൽ (Max 768px)
+   =================================================== */
+@media screen and (max-width: 768px) {
+  
+  /* 1. NAVIGATION BAR ശരിയാക്കാൻ */
+  .logo {
+        flex-direction: column; /* ഫോണിൽ ലോഗോയും പേരും ഒന്നിന് താഴെ ഒന്നാക്കാൻ */
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .logo img:first-child {
+        height: 80px; /* ലോഗോ വലിപ്പം ഫോണിന് പാകത്തിന് */
+    }
+
+    .logo img:last-child {
+        height: 50px; /* പേരിന്റെ വലിപ്പം ഫോണിന് പാകത്തിന് */
+    }
+
+    .nav-bar ul {
+        flex-direction: column; /* മെനു ലിങ്കുകൾ നെടുകെ (Vertical) ആക്കാൻ */
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .nav-bar a {
+        font-size: 18px; /* വിരൽ കൊണ്ട് ക്ലിക്ക് ചെയ്യാൻ എളുപ്പത്തിന് വലിപ്പം കൂട്ടി */
+        padding: 5px 0;
+        display: block;
+    }
+/* HERO */
+    .hero {
+        padding: 50px 15px 50px 15px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem; /* ഫോണിന് അനുയോജ്യമായ വലിപ്പം */
+        padding: 5px;
+    }
+
+    .hero h2 {
+        font-size: 1.3rem;
+        margin-bottom: 25px;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .btn-container {
+        flex-direction: column; /* ഫോണിൽ രണ്ട് ബട്ടണുകൾ ഒന്നിന് താഴെ ഒന്നാക്കാൻ */
+        width: 100%;
+        gap: 15px; /* ബട്ടണുകൾ തമ്മിലുള്ള അകലം */
+    }
+
+    .cta-button {
+        width: 100%; /* ബട്ടണുകൾക്ക് ഫോണിന്റെ പൂർണ്ണ വീതി നൽകാൻ */
+        text-align: center;
+        font-size: 17px;
+        padding: 14px 20px; /* ക്ലിക്ക് ചെയ്യാൻ എളുപ്പമുള്ള വലിപ്പം */
+        margin-bottom: 0; /* അനാവശ്യ മാർജിൻ ഒഴിവാക്കി */
+    }
+  /* 2. ABOUT & SPECIAL DISH സെക്ഷൻ ഒന്നിച്ച് കൂടുന്നത് തടയാൻ */
+  .about-special_dish {
+    display: flex !important;
+    flex-direction: column !important; 
+    height: auto !important; /* ഫിക്സഡ് ഹൈറ്റ് ഉണ്ടെങ്കിൽ അത് ഒഴിവാക്കാൻ */
+    gap: 40px !important; /* രണ്ട് സെക്ഷനുകൾ തമ്മിൽ നല്ല അകലം നൽകാൻ */
+    padding: 20px !important;
+  }
+
+  /* 3. HERO SECTION മൊബൈൽ വ്യൂ */
+  .hero {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .hero h2 {
+    font-size: 18px;
+  }
+
+  .btn-container {
+    display: flex;
+    flex-direction: column; /* ബട്ടണുകൾ താഴേക്ക് താഴേക്ക് വരാൻ */
+    gap: 10px;
+    align-items: center;
+  }
+
+  .cta-button {
+    width: 80%; /* ബട്ടണുകൾക്ക് നല്ല വലിപ്പം നൽകാൻ */
+  }
+   /* 4. MENU SECTION ശരിയാക്കാൻ */
+     .menu h3 {
+        font-size: 28px; /* തലക്കെട്ടിന്റെ വലിപ്പം അല്പം കുറച്ചു */
+        text-align: center;
+    }
+
+    /* ഒരു വരിയിൽ 2 കാർഡുകൾ വീതം വരാൻ */
+    .menu-grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .menu-card {
+        height: 180px; /* കാർഡിന്റെ ഉയരം പാകത്തിന് കുറച്ചു */
+    }
+
+    .menu-card h4 {
+        font-size: 16px;
+        letter-spacing: 2px;
+        width: 85%;
+    }
+       /* കാർഡിന്റെ ഭംഗി ഫോണിലും നിലനിർത്താൻ */
+    .menu-card {
+        height: 160px; /* ഫോണിന് അനുയോജ്യമായ ഉയരം */
+        border-radius: 12px;
+    }
+
+    .menu-card h4 {
+        font-size: 15px;
+        letter-spacing: 1px;
+        padding: 10px 15px;
+        width: 90%;
+    }
+
+    /* ക്ലിക്ക് ചെയ്യുമ്പോൾ വരുന്ന ലിസ്റ്റിന്റെ മൊബൈൽ ക്രമീകരണം */
+    .menu-list.show {
+        margin-top: 8px;
+        padding: 12px;
+        border-radius: 0 0 10px 10px; /* താഴെ മാത്രം ചെറിയ വളവ് */
+    }
+
+    .menu-list li {
+        font-size: 15px; /* ഫോണിൽ വായിക്കാൻ എളുപ്പത്തിന് വലിപ്പം കൂട്ടി */
+        padding: 6px 0; /* ക്ലിക്ക് ചെയ്യാൻ പാകത്തിന് ഗ്യാപ്പ് കൂട്ടി */
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* ലിസ്റ്റുകൾക്കിടയിൽ നേരിയ വര */
+    }
+    
+    .menu-list li:last-child {
+        border-bottom: none; /* അവസാനത്തെ വര ഒഴിവാക്കി */
+    }
+/* GALLARY */
+   .gallery-section {
+        padding: 30px 15px;
+        min-height: auto;
+    }
+
+    .gallery-section h3 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+    }
+
+    /* മൊബൈലിൽ ഒരു വരിയിൽ ഒരു കാർഡ് വീതം വരാൻ */
+    .gallery-grid {
+      display: grid;  
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px; /* കാർഡുകൾ തമ്മിലുള്ള അകലം അല്പം കൂട്ടി */
+    }
+
+    /* ഫോട്ടോ കാർഡിന്റെ ക്രമീകരണം */
+    .gallaryImage-card {
+        height: 250px; 
+        border-radius: 8px;
+        object-fit: cover;
+    }
+
+    /* വീഡിയോകൾക്ക് താഴേക്ക് ആവശ്യത്തിന് സ്ഥലം നൽകാൻ */
+    .video-card {
+        height: 150px;
+        border-radius: 8px;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    /* വീഡിയോ കാർഡിന്റെ ഉള്ളിൽ <iframe> അല്ലെങ്കിൽ <video> ടാഗ് ഉണ്ടെങ്കിൽ അവയും കൃത്യമാകാൻ */
+    .video-card video,
+    .video-card iframe {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* ഹോവർ ഇഫക്റ്റ് ഒഴിവാക്കുന്നു */
+    .gallaryImage-card:hover, .video-card:hover {
+        transform: none;
+    }
+
+/*review*/
+.review-reservation-container {
+    flex-direction: column !important; /* ഒരേ നിരയിലുള്ളത് മാറ്റി താഴെ താഴെയാക്കും */
+    align-items: center !important;    /* ബോക്സുകൾ നടുവിലേക്ക് വരാൻ */
+    height: auto !important;           /* മൊബൈലിൽ ഹൈറ്റ് ഓട്ടോമാറ്റിക് ആയി അഡ്ജസ്റ്റ് ആകാൻ */
+    gap: 20px !important;              /* രണ്ട് ബോക്സുകൾ തമ്മിലുള്ള അകലം */
+    padding: 20px 15px !important;
+    box-sizing: border-box !important;
+  }
+
+  .review-box, .booking-table {
+    width: 100% !important;            /* മൊബൈൽ സ്ക്രീനിന്റെ പൂർണ്ണ വീതി എടുക്കാൻ */
+    max-width: 100% !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+  }
+  /* ഇൻപുട്ടുകളും ടെക്സ്റ്റ് ഏരിയയും സ്ക്രീനിൽ ഒതുങ്ങി നിൽക്കാൻ */
+  #reviewForm input, textarea, .booking-table input {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .contact {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact-info {
+        text-align: center;
+    }
+    .info-item {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+/* 3. ലാപ്ടോപ്പ്/ഡെസ്‌ക്‌ടോപ്പ് (Laptops/Desktops - above 769px) */
+@media screen and (min-width: 769px) {
+  .review-box, .booking-table {
+  flex: 1;
+  max-width: 450px;            /* iPad-ൽ ഒതുങ്ങാൻ വിഡ്ത് അല്പം കുറച്ചു */
+  box-sizing: border-box;
+}
+
+}

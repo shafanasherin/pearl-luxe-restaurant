@@ -1,0 +1,26 @@
+.menu-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* നേർത്ത വേർതിരിക്കൽ ലൈൻ */
+}
+
+.food-name {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.food-desc {
+    margin: 4px 0 0 0;
+    font-size: 12px;
+    color: #aaaaaa; /* അല്പം മങ്ങിയ ഗ്രേ നിറം വിവരണം വായിക്കാൻ എളുപ്പമാക്കും */
+    line-height: 1.4;
+}
+
+/* ഭക്ഷണത്തിന്റെ ചെറിയ ചിത്രം ചേർക്കുന്നുണ്ടെങ്കിൽ മാത്രം ഇത് ഉപയോഗിക്കുക */
+.food-thumb {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    margin-top: 5px;
+    object-fit: cover;
+}
